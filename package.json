@@ -9,6 +9,7 @@
     "@types/node": "^22.10.2",
     "@types/opencc-js": "^1.0.3",
     "glob": "^11.0.0",
+    "naive-ui": "^2.40.3",
     "tsx": "^4.19.2",
     "vitepress": "^1.5.0"
   },

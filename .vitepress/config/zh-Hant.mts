@@ -13,12 +13,19 @@ const rime_zh_Hant: DefaultTheme.SidebarMulti["rime"] = [
   {
     text: "進階",
     items: [
-      { text: "輸入方案設計書", link: "/zh-Hant/rime/schema" },
+      { text: "輸入方案設計書", link: "/zh-Hant/rime/schema-design" },
       { text: "配置文件", link: "/zh-Hant/rime/configuration" },
       { text: "拼寫運算", link: "/zh-Hant/rime/spelling-algebra" },
       { text: "詞典擴展包", link: "/zh-Hant/rime/dictionary-pack" },
       { text: "配方", link: "/zh-Hant/rime/recipes" },
     ],
+  },
+  {
+    text: "配置項詳解",
+    items: [
+      { text: "schema.yaml 詳解", link: "/zh-Hant/rime/schema" },
+      { text: "dict.yaml 詳解", link: "/zh-Hant/rime/dict" },
+    ]
   },
   {
     text: "前端",
@@ -37,8 +44,9 @@ const config: LocaleSpecificConfig<DefaultTheme.Config> = {
       "/zh-Hant/rime/": rime_zh_Hant,
     },
     nav: [
-      { text: "教程", link: "/rime" },
-      { text: "開發文檔", link: "/librime" },
+      { text: "教程", link: "/zh-Hant/rime" },
+      { text: "開發文檔", link: "/zh-Hant/librime" },
+      { text: "工具", items: [{ text: "拼寫運算調試", link: "/zh-Hant/debugger" }] },
     ],
     outlineTitle: "本頁大綱",
     sidebarMenuLabel: "文檔目錄",

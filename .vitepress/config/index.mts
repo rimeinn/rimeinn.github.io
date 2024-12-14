@@ -14,12 +14,19 @@ const rime: DefaultTheme.SidebarMulti["rime"] = [
   {
     text: "进阶",
     items: [
-      { text: "输入方案设计书", link: "/rime/schema" },
+      { text: "输入方案设计书", link: "/rime/schema-design" },
       { text: "配置文件", link: "/rime/configuration" },
       { text: "拼写运算", link: "/rime/spelling-algebra" },
       { text: "词典扩展包", link: "/rime/dictionary-pack" },
       { text: "配方", link: "/rime/recipes" },
     ],
+  },
+  {
+    text: "配置项详解",
+    items: [
+      { text: "schema.yaml 详解", link: "/rime/schema" },
+      { text: "dict.yaml 详解", link: "/rime/dict" },
+    ]
   },
   {
     text: "前端",
@@ -40,6 +47,7 @@ const config: LocaleSpecificConfig<DefaultTheme.Config> = {
     nav: [
       { text: "教程", link: "/rime" },
       { text: "开发文档", link: "/librime" },
+      { text: "工具", items: [{ text: "拼写运算调试", link: "/debugger" }] },
     ],
     outlineTitle: "本页大纲",
     sidebarMenuLabel: "文档目录",
