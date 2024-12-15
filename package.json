@@ -6,14 +6,15 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.10.2",
     "@types/opencc-js": "^1.0.3",
+    "buffer": "^6.0.3",
     "glob": "^11.0.0",
+    "js-yaml": "^4.1.0",
     "naive-ui": "^2.40.3",
+    "opencc-js": "^1.0.5",
     "tsx": "^4.19.2",
     "vitepress": "^1.5.0"
-  },
-  "dependencies": {
-    "opencc-js": "^1.0.5"
   }
 }

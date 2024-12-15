@@ -1,13 +1,11 @@
-<script setup lang="ts">
+---
+layout: home
+---
+
+<script setup>
 import Debugger from "./components/Debugger.vue"
 </script>
 
-<style>
-.aside {
-    display: none !important;
-}
-</style>
+# 拼写运算调试
 
-# 拼写运算调试器
-
-<Debugger />
+<ClientOnly><Debugger /></ClientOnly>

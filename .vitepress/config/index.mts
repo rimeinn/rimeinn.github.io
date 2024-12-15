@@ -89,7 +89,11 @@ export default defineConfig({
       ...zh_Hant,
     },
   },
-
+  vite: {
+    ssr: {
+      noExternal: ["naive-ui", "vueuc"],
+    },
+  },
   themeConfig: {
     socialLinks: [{ icon: "github", link: "https://github.com/rimeinn" }],
   },
