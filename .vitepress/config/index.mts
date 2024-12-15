@@ -26,7 +26,7 @@ const rime: DefaultTheme.SidebarMulti["rime"] = [
     items: [
       { text: "schema.yaml 详解", link: "/rime/schema" },
       { text: "dict.yaml 详解", link: "/rime/dict" },
-    ]
+    ],
   },
   {
     text: "前端",
@@ -38,16 +38,30 @@ const rime: DefaultTheme.SidebarMulti["rime"] = [
   },
 ];
 
+const hamster: DefaultTheme.SidebarMulti["hamster"] = [
+  { text: "仓输入法", link: "/frontend/hamster/" },
+  { text: "指南", items: [] },
+  { text: "应用更新", items: [] },
+];
+
 const config: LocaleSpecificConfig<DefaultTheme.Config> = {
   lang: "zh-Hans",
   themeConfig: {
     sidebar: {
       "/rime/": rime,
+      "/frontend/hamster/": hamster,
     },
     nav: [
       { text: "教程", link: "/rime" },
       { text: "开发文档", link: "/librime" },
       { text: "工具", items: [{ text: "拼写运算调试", link: "/debugger" }] },
+      {
+        text: "前端",
+        items: [
+          { text: "仓输入法", link: "/frontend/hamster" },
+          { text: "同文输入法", link: "/frontend/trime" },
+        ],
+      },
     ],
     outlineTitle: "本页大纲",
     sidebarMenuLabel: "文档目录",
