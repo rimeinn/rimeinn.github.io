@@ -44,12 +44,30 @@ const hamster: DefaultTheme.SidebarMulti["hamster"] = [
   { text: "应用更新", items: [] },
 ];
 
+const plugin: DefaultTheme.SidebarMulti["plugin"] = [
+  {
+    text: "Lua",
+    items: [
+      { text: "快速上手", link: "/plugin/lua/Scripting" },
+      {
+        text: "编程接口",
+        link: "/plugin/lua/API",
+      },
+      {
+        text: "对象接口",
+        link: "/plugin/lua/Objects",
+      },
+    ],
+  },
+];
+
 const config: LocaleSpecificConfig<DefaultTheme.Config> = {
   lang: "zh-Hans",
   themeConfig: {
     sidebar: {
       "/rime/": rime,
       "/frontend/hamster/": hamster,
+      "/plugin/": plugin,
     },
     nav: [
       { text: "教程", link: "/rime" },
@@ -61,6 +79,10 @@ const config: LocaleSpecificConfig<DefaultTheme.Config> = {
           { text: "仓输入法", link: "/frontend/hamster" },
           { text: "同文输入法", link: "/frontend/trime" },
         ],
+      },
+      {
+        text: "插件",
+        items: [{ text: "Lua", link: "/plugin/lua/Scripting" }],
       },
     ],
     outlineTitle: "本页大纲",
@@ -97,4 +119,5 @@ export default defineConfig({
   themeConfig: {
     socialLinks: [{ icon: "github", link: "https://github.com/rimeinn" }],
   },
+  ignoreDeadLinks: true,
 });

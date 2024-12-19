@@ -195,7 +195,7 @@ engine:
     - lua_filter@single_char_first
 ```
 
-## 组件配置 —— Processor 类
+## 组件配置：处理器类
 
 ### 拼写处理器 `speller`
 
@@ -389,7 +389,7 @@ punctuator:
     .: { commit: "。" } #无选单，直接上屛。优先级最高
 ```
 
-## 组件配置 —— Segmentor 类
+## 组件配置：分段器类
 
 ### 正则分段器 `affix_segmentor`
 
@@ -424,7 +424,7 @@ reverse_lookup:
     - jyutping_lookup
 ```
 
-## 组件配置 —— Translator 类
+## 组件配置：翻译器类
 
 ### 脚本翻译器 `script_translator` / 码表翻译器 `table_translator`
 
@@ -531,7 +531,7 @@ custom_phrase: #这是一个table_translator
   initial_quality: 1
 ```
 
-## 组件配置 —— Filter 类
+## 组件配置：过滤器类
 
 ### 反查过滤器 `reverse_lookup_filter`
 
