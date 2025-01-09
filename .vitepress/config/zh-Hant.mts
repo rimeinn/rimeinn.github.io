@@ -46,7 +46,12 @@ const config: LocaleSpecificConfig<DefaultTheme.Config> = {
     nav: [
       { text: "教程", link: "/zh-Hant/rime" },
       { text: "開發文檔", link: "/zh-Hant/librime" },
-      { text: "工具", items: [{ text: "拼寫運算調試", link: "/zh-Hant/debugger" }] },
+      { text: "工具",
+        items: [
+          { text: "拼寫運算調試", link: "/zh-Hant/debugger" },
+          { text: "方案測試工具", link: "https://github.com/rimeinn/mira" },
+        ]
+      },
     ],
     outlineTitle: "本頁大綱",
     sidebarMenuLabel: "文檔目錄",

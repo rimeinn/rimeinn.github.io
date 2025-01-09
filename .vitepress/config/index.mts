@@ -72,7 +72,12 @@ const config: LocaleSpecificConfig<DefaultTheme.Config> = {
     nav: [
       { text: "教程", link: "/rime" },
       { text: "开发文档", link: "/librime" },
-      { text: "工具", items: [{ text: "拼写运算调试", link: "/debugger" }] },
+      { text: "工具",
+        items: [
+          { text: "拼写运算调试", link: "/debugger" },
+          { text: "方案测试工具", link: "https://github.com/rimeinn/mira" },
+        ]
+      },
       {
         text: "前端",
         items: [
